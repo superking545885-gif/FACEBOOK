@@ -1,0 +1,13 @@
+# Proteksi folder panel
+<Files "logs.txt">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Proteksi view.php
+<Files "view.php">
+    AuthType Basic
+    AuthName "ZUMA PANEL"
+    AuthUserFile /path/to/.htpasswd
+    Require valid-user
+</Files>
